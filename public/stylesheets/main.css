@@ -350,6 +350,31 @@ h4.borderEffect:focus::after {
 
 img.responsive-img {
   height: 325px;
+  max-width: none;
   margin: 20px;
+  position: relative;
+  margin: 0 30vw 0 0;
 }
-/*# sourceMappingURL=main.css.map */
+
+/*Project cards*/
+
+.content__title {
+  position: relative;
+  font-size: 5vw;
+  margin: 0;
+  pointer-events: none;
+  bottom: 10%;
+  left: 35%;
+}
+
+.content__author, .content__desc {
+	/*writing-mode: vertical-lr;*/
+	padding: 1em;
+	text-align: right;
+}
+
+.content__link {
+	text-align: right;
+	z-index: 10;
+	padding: 0 1em 0.15em;
+}
