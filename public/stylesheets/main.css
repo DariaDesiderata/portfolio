@@ -21,7 +21,7 @@ body {
   opacity: 0;
   height: 100vh;
   width:100vw;
-  background-image: url('./tiny_grid.png')
+  background-image: url('./assets/tiny_grid.png')
 }
 .tabs {
   box-shadow: 0;
@@ -126,7 +126,7 @@ i {
   animation: bobble1 2s infinite;
 }
 
-.img2, .img4, .img7, .img11, .img12, .img13 {
+.img2, .img4, .img7, .img11, .img12, .img13, .img16 {
   animation: bobble2 2s infinite;
 }
 
@@ -292,6 +292,13 @@ i {
 .img15:hover .colored {
     display: inline;
 }
+.img16:hover .devicon-d3js-plain,
+.img16 .colored {
+    display: none;
+}
+.img16:hover .colored {
+    display: inline;
+}
 
 h4.borderEffect {
 	position: relative;
@@ -336,7 +343,10 @@ h4.borderEffect:focus::after {
 }
 
 .projects {
-  height: 100vh;
+  background-image: url('./assets/wall4.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
   width: 100%;
 }
 /*# sourceMappingURL=main.css.map */
