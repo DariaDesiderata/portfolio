@@ -1,13 +1,7 @@
-@font-face {
-  font-family: 'Neuton'; /* This can be named whatever you want */
-  src: url('./Neuton-Regular.woff2') format('woff2'), /* Super Modern Browsers */
-       url('./Neuton-Regular.woff') format('woff'), /* Pretty Modern Browsers */
-       url('./Neuton-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
-}
 body {
   background-color: hsla(200, 5%, 84%, 0.2);
-  font-family: 'Neuton', sans-serif;
-  letter-spacing: 5px;
+  font-family: 'Cinzel', serif;
+  letter-spacing: 7px;
 }
 
 #fireImg, #pineappleImg {
@@ -20,23 +14,22 @@ body {
 .skillsContainer {
   opacity: 0;
   height: 100vh;
-  width:100vw;
+  width: 100vw;
   background-image: url('./assets/tiny_grid.png')
 }
 .tabs {
   box-shadow: 0;
 }
-.tabs .tab a {
+
+.tabs .tab a, .tabs .tab a.active, .tabs .tab a.hover {
+  color: hsla(68, 94%, 73%, 1);
   color: hsla(68, 94%, 73%, 1);
   text-decoration: none;
   font-size: 1em;
-  letter-spacing: 5px;
-}
-.tab a.active {
-  color: hsla(68, 94%, 73%, 1);
+  letter-spacing: 7px;
 }
 .animated {
-  animation-duration: 2s;
+  animation-duration: 3s;
 }
 .logo {
   height: 100vh;
@@ -45,7 +38,9 @@ body {
 .intro {
   height: 100vh;
   position: relative;
-  color: hsla(186, 86%, 83%, 1)
+  color: hsla(186, 86%, 83%, 1);
+  letter-spacing: 10px;
+  font-weight: 900;
 }
 .border {
   border: 4px double hsla(186, 86%, 83%, .5);
@@ -55,8 +50,9 @@ body {
   display: block;
   max-width: 100%;
   position: absolute;
-  bottom:200px;
+  bottom: 200px;
   left: 45%;
+  padding: 30px;
 }
 a.scroll {
   position: relative;
@@ -102,9 +98,6 @@ i {
 }
 .iconsContainer {
   margin: 40px;
-  display: flex;
-  justify-content: space-around;
-  /*animation: animatedBackground 5s linear infinite;*/
 }
 
 /*@keyframes animatedBackground {
@@ -348,5 +341,14 @@ h4.borderEffect:focus::after {
   background-repeat: no-repeat;
   min-height: 100vh;
   width: 100%;
+}
+
+#projectLeft1,#projectLeft2, #projectRight1, #projectRight2 {
+  opacity: 0;
+}
+
+img.responsive-img {
+  height: 325px;
+  margin: 20px;
 }
 /*# sourceMappingURL=main.css.map */
