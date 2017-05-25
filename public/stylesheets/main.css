@@ -342,16 +342,11 @@ h4.borderEffect:focus::after {
 /*Project cards*/
 img.responsive-img {
   height: 325px;
-  max-width: none;
-  position: absolute;
+  max-width: 500px;
 }
-
 .content-wrap {
-  position: relative;
-  height: 400px;
-  width: auto;
+  margin-bottom: 35px;
 }
-
 .page-footer {
 background-color: hsla(204, 28%, 58%, 1);
 }
