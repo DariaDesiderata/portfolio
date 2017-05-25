@@ -2,6 +2,8 @@ body {
   background-color: hsla(200, 5%, 84%, 0.2);
   font-family: 'Cinzel', serif;
   letter-spacing: 7px;
+  display: flex;
+  flex-direction: column;
 }
 
 #fireImg, #pineappleImg {
@@ -340,6 +342,10 @@ h4.borderEffect:focus::after {
   width: 100%;
 }
 
+  main {
+    flex: 1 0 auto;
+  }
+
 #projectLeft1, #projectLeft2, #projectLeft3, #projectLeft4,
  #projectRight1, #projectRight2, #projectRight3, #projectRight4 {
   opacity: 0;
@@ -360,4 +366,8 @@ img.responsive-img {
   position: relative;
   height: 400px;
   width: auto;
+}
+
+.page-footer {
+background-color: hsla(204, 28%, 58%, 1);
 }

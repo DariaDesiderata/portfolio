@@ -1,10 +1,32 @@
 $().ready(() => {
+  $('.scrollHome').on('click', function(e) {
+  	e.preventDefault()
+  	$('html, body').animate({
+      scrollTop: $('.logo').offset().top
+    }, 700, 'swing')
+  })
+  
   $('.scroll').on('click', function(e) {
   	e.preventDefault()
   	$('html, body').animate({
       scrollTop: $('#skills').offset().top
     }, 700, 'swing')
   })
+
+  $('.scrollTab').on('click', function(e) {
+  	e.preventDefault()
+  	$('html, body').animate({
+      scrollTop: $('#skills').offset().top
+    }, 700, 'swing')
+  })
+
+  $('.scrollTabProjects').on('click', function(e) {
+  	e.preventDefault()
+  	$('html, body').animate({
+      scrollTop: $('.projects').offset().top
+    }, 800, 'swing')
+  })
+
   var options = [
     {
       selector: '#skills', offset: 500, callback: function(el) {
