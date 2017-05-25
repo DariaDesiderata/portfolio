@@ -1,11 +1,12 @@
 $().ready(() => {
+  
   $('.scrollHome').on('click', function(e) {
   	e.preventDefault()
   	$('html, body').animate({
       scrollTop: $('.logo').offset().top
     }, 700, 'swing')
   })
-  
+
   $('.scroll').on('click', function(e) {
   	e.preventDefault()
   	$('html, body').animate({
