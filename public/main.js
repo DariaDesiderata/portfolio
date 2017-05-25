@@ -22,12 +22,32 @@ $().ready(() => {
       }
     },
     {
-      selector: '#projectLeft2', offset: 0, callback: function(el) {
+      selector: '#projectLeft2', offset: 50, callback: function(el) {
         $(el).addClass('animated fadeInUp')
       }
     },
     {
-      selector: '#projectRight2', offset: 0, callback: function(el) {
+      selector: '#projectRight2', offset: 150, callback: function(el) {
+        $(el).addClass('animated fadeInUp')
+      }
+    },
+    {
+      selector: '#projectLeft3', offset: 0, callback: function(el) {
+        $(el).addClass('animated fadeInUp')
+      }
+    },
+    {
+      selector: '#projectRight3', offset: 150, callback: function(el) {
+        $(el).addClass('animated fadeInUp')
+      }
+    },
+    {
+      selector: '#projectLeft4', offset: 50, callback: function(el) {
+        $(el).addClass('animated fadeInUp')
+      }
+    },
+    {
+      selector: '#projectRight4', offset: 150, callback: function(el) {
         $(el).addClass('animated fadeInUp')
       }
     }
