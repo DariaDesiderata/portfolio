@@ -24,7 +24,7 @@ body {
 .tabs .tab a, .tabs .tab a.active, .tabs .tab a:hover {
   color: hsla(68, 94%, 73%, 1);
   text-decoration: none;
-  font-size: 1.25em;
+  font-size: 1.15em;
   letter-spacing: 7px;
 }
 .animated {
@@ -39,7 +39,6 @@ body {
   position: relative;
   color: hsla(186, 86%, 83%, 1);
   letter-spacing: 7px;
-  /*font-weight: 600;*/
 }
 
 .border {
@@ -346,7 +345,7 @@ img.responsive-img {
   max-width: 500px;
 }
 .content-wrap {
-  margin-bottom: 35px;
+  margin: 0 25px 35px 0;
 }
 .doc {
   min-width: 100%;

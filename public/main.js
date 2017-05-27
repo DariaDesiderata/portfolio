@@ -35,6 +35,13 @@ $().ready(() => {
     }, 1100, 'swing')
   })
 
+  $('.scrollTabContact').on('click', function(e) {
+  	e.preventDefault()
+  	$('html, body').animate({
+      scrollTop: $('.footerLinks').offset().top
+    }, 2000, 'swing')
+  })
+
   var options = [
     {
       selector: '#skills', offset: 500, callback: function(el) {
