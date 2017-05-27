@@ -1,5 +1,5 @@
 $().ready(() => {
-  
+
   $('.scrollHome').on('click', function(e) {
   	e.preventDefault()
   	$('html, body').animate({
@@ -28,9 +28,21 @@ $().ready(() => {
     }, 800, 'swing')
   })
 
+  $('.scrollTabResume').on('click', function(e) {
+  	e.preventDefault()
+  	$('html, body').animate({
+      scrollTop: $('.docContainer').offset().top
+    }, 1100, 'swing')
+  })
+
   var options = [
     {
       selector: '#skills', offset: 500, callback: function(el) {
+        Materialize.fadeInImage($(el))
+      }
+    },
+    {
+      selector: '.docContainer', offset: 200, callback: function(el) {
         Materialize.fadeInImage($(el))
       }
     },
