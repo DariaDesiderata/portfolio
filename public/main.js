@@ -1,5 +1,14 @@
 $().ready(() => {
 
+	$(window).scroll(function() {
+		let windowPos = $(window).scrollTop()
+		if (windowPos > $(window).height()) {
+			$('.tabs').addClass("tabsScroll")
+		} else {
+			$('.tabs').removeClass("tabsScroll")
+		}
+	})
+
   $('.scrollHome').on('click', function(e) {
   	e.preventDefault()
   	$('html, body').animate({
@@ -95,6 +104,8 @@ $().ready(() => {
     }
   ]
 
+
+  $(".button-collapse").sideNav();
   $('.parallax').parallax();
   Materialize.scrollFire(options);
 })

@@ -17,23 +17,45 @@
     <main>
       <section class="logo center-align parallax-container">
         <div class="parallax"><img src="./stylesheets/assets/fire.jpg" id="fireImg"/></div>
-        <ul class="tabs brackets transparent">
-          <li class="tab col s6 active">
-            <a class="scrollHome">Hello</a>
-          </li>
-          <li class="tab col s6">
-            <a class="scrollTab">Skills</a>
-          </li>
-          <li class="tab col s6">
-            <a class="scrollTabProjects">Projects</a>
-          </li>
-          <li class="tab col s6">
-            <a class="scrollTabResume">Resume</a>
-          </li>
-          <li class="tab col s6">
-            <a class="scrollTabContact">Contact me</a>
-          </li>
-        </ul>
+        <div class="navbar-fixed">
+          <nav class="nav transparent">
+            <a href="#" data-activates="mobile-nav" class="button-collapse"><i class="material-icons">menu</i></a>
+            <ul class="tabs brackets hide-on-med-and-down">
+              <li class="tab col active">
+                <a class="scrollHome">Hello</a>
+              </li>
+              <li class="tab col s6">
+                <a class="scrollTab">Skills</a>
+              </li>
+              <li class="tab col s6">
+                <a class="scrollTabProjects">Projects</a>
+              </li>
+              <li class="tab col s6">
+                <a class="scrollTabResume">Resume</a>
+              </li>
+              <li class="tab col s6">
+                <a class="scrollTabContact">Contact me</a>
+              </li>
+            </ul>
+            <ul class="side-nav" id="mobile-nav">
+              <li class="tab col active">
+                <a class="scrollHome">Hello</a>
+              </li>
+              <li class="tab col s6">
+                <a class="scrollTab">Skills</a>
+              </li>
+              <li class="tab col s6">
+                <a class="scrollTabProjects">Projects</a>
+              </li>
+              <li class="tab col s6">
+                <a class="scrollTabResume">Resume</a>
+              </li>
+              <li class="tab col s6">
+                <a class="scrollTabContact">Contact me</a>
+              </li>
+            </ul>
+          </nav>
+      </div>
         <section class="container">
           <div class="row intro">
             <div class="intro-text col l8 m12 s12 offset-l2 animated fadeIn">
@@ -48,7 +70,7 @@
       </section>
       <section class="skillsContainer" id="skills">
         <div class="container">
-          <div class="skillsHeader row center-align">
+          <div class="sectionHeader row center-align">
             <h4 class="col s12 borderEffect">My skills and tech stack</h4>
           </div>
           <div class="iconsContainer row">
@@ -127,7 +149,7 @@
       </section>
       <section class="projects">
         <div class="container">
-          <div class="skillsHeader row center-align">
+          <div class="sectionHeader row center-align">
             <h4 class="col s12 borderEffect">Projects I built</h4>
           </div>
           <div class="row" id="projectLeft1">
@@ -181,7 +203,7 @@
         </div>
       </section>
       <section class="container docContainer">
-        <div class="row center-align">
+        <div class="sectionHeader row center-align">
           <h4 class="col s12 borderEffect">My resume</h4>
         </div>
         <div class="row resume">

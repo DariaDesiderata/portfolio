@@ -6,11 +6,17 @@ body {
   flex-direction: column;
   background-image: url('./assets/tiny_grid.png');
 }
-
+main {
+  flex: 1 0 auto;
+}
+nav {
+  box-shadow: none;
+}
 #fireImg {
   background-size: cover;
 }
-.skillsHeader {
+.sectionHeader {
+  margin-top:30px;
   padding: 30px;
   color: hsla(222, 45%, 37%, 1);
 }
@@ -20,12 +26,24 @@ body {
   min-height: 100vh;
   width: 100vw;
 }
+.tabs {
+  background-color: transparent;
+}
 
+.tabsScroll {
+  background-color: hsla(222, 45%, 37%, 0.7);
+  box-shadow: 3px 3px 7px hsla(222, 45%, 37%, 0.7);
+}
 .tabs .tab a, .tabs .tab a.active, .tabs .tab a:hover {
   color: hsla(68, 94%, 73%, 1);
   text-decoration: none;
+  font-weight: 600;
   font-size: 1.15em;
   letter-spacing: 7px;
+  margin: 0 25px 0 25px;
+}
+nav ul li.active {
+  background-color: transparent;
 }
 .animated {
   animation-duration: 3s;
@@ -326,17 +344,9 @@ h4.borderEffect:focus::after {
   width: 100%;
 }
 
-main {
-  flex: 1 0 auto;
-}
-
 #projectLeft1, #projectLeft2, #projectLeft3, #projectLeft4,
  #projectRight1, #projectRight2, #projectRight3, #projectRight4 {
   opacity: 0;
-}
-
-.skillsHeader {
-  font-weight: bold;
 }
 
 /*Project cards*/
