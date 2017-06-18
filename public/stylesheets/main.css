@@ -120,7 +120,6 @@ i {
   i {
     font-size: 3.4em;
     color: hsla(204, 28%, 58%, 1);
-    margin: 0.5em;
     padding: 0.4em;
   }
 }
@@ -131,10 +130,12 @@ i {
 
 .img1, .img3, .img5, .img6, .img8, .img9, .img10, .img15, .img14 {
   animation: bobble1 2s infinite;
+  margin: 0 0 1em 0;
 }
 
 .img2, .img4, .img7, .img11, .img12, .img13, .img16 {
   animation: bobble2 2s infinite;
+  margin: 0 0 1em 0;
 }
 
 @keyframes bobble1 {
@@ -314,13 +315,12 @@ h4.borderEffect {
 	color: hsla(222, 45%, 37%, 1);
 	text-transform: uppercase;
 	font-weight: 400;
-
 }
 
 h4.borderEffect::before,
 h4.borderEffect::after {
 	position: absolute;
-  margin: 20px;
+  margin: 20px 0;
 	top: 100%;
 	left: 0;
 	width: 100%;
