@@ -371,7 +371,7 @@ h4.borderEffect:focus::after {
   margin: 0 25px 35px 0;
 }
 
-@media {
+@media screen and (max-width: 414px){
   .content-wrap {
     margin: 0 0 35px 0;
   }
@@ -379,10 +379,11 @@ h4.borderEffect:focus::after {
     width: 100vw;
   }
   embed.doc {
-    min-width: 100%;
+    min-width: 100vw;
     min-height: 100vh;
   }
 }
+
 .doc {
   min-width: 100%;
   min-height: 100vh;
