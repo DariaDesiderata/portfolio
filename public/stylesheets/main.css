@@ -12,6 +12,10 @@ main {
 nav {
   box-shadow: none;
 }
+#sidenav-overlay {
+  background-color: rgba(0, 0, 0, 0);
+  z-index: 0;
+}
 #fireImg {
   background-size: cover;
 }
@@ -360,9 +364,24 @@ h4.borderEffect:focus::after {
 }
 
 /*Project cards*/
-
+.fa.imgIcon {
+  color: hsla(222, 45%, 37%, 0.7);
+}
 .content-wrap {
   margin: 0 25px 35px 0;
+}
+
+@media {
+  .content-wrap {
+    margin: 0 0 35px 0;
+  }
+  .nav {
+    width: 100vw;
+  }
+  embed.doc {
+    min-width: 100%;
+    min-height: 100vh;
+  }
 }
 .doc {
   min-width: 100%;

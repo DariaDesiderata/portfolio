@@ -9,45 +9,45 @@ $().ready(() => {
 		}
 	})
 
-  $('.scrollHome').on('click', function(e) {
+  $('.scrollHome').on('click touch', function(e) {
   	e.preventDefault()
   	$('html, body').animate({
       scrollTop: $('.logo').offset().top
     }, 700, 'swing')
   })
 
-  $('.scroll').on('click', function(e) {
+  $('.scroll').on('click touch', function(e) {
   	e.preventDefault()
   	$('html, body').animate({
-      scrollTop: $('#skills').offset().top + 100
+      scrollTop: $('#skills').offset().top + 50
     }, 700, 'swing')
   })
 
-  $('.scrollTab').on('click', function(e) {
+  $('.scrollTab').on('click touch', function(e) {
   	e.preventDefault()
   	$('html, body').animate({
-      scrollTop: $('#skills').offset().top
+      scrollTop: $('#skills').offset().top - 15
     }, 700, 'swing')
   })
 
-  $('.scrollTabProjects').on('click', function(e) {
+  $('.scrollTabProjects').on('click touch', function(e) {
   	e.preventDefault()
   	$('html, body').animate({
-      scrollTop: $('.projects').offset().top
+      scrollTop: $('.projects').offset().top - 15
     }, 800, 'swing')
   })
 
-  $('.scrollTabResume').on('click', function(e) {
+  $('.scrollTabResume').on('click touch', function(e) {
   	e.preventDefault()
   	$('html, body').animate({
-      scrollTop: $('.docContainer').offset().top
+      scrollTop: $('.docContainer').offset().top - 15
     }, 1100, 'swing')
   })
 
-  $('.scrollTabContact').on('click', function(e) {
+  $('.scrollTabContact').on('click touch', function(e) {
   	e.preventDefault()
   	$('html, body').animate({
-      scrollTop: $('.footerLinks').offset().top
+      scrollTop: $('.footerLinks').offset().top + 200
     }, 2000, 'swing')
   })
 
@@ -62,8 +62,13 @@ $().ready(() => {
         Materialize.fadeInImage($(el))
       }
     },
+		{
+      selector: '#projectLeft0', offset: 0, callback: function(el) {
+        $(el).addClass('animated fadeInUp')
+      }
+    },
     {
-      selector: '#projectLeft1', offset: 0, callback: function(el) {
+      selector: '#projectLeft1', offset: 100, callback: function(el) {
         $(el).addClass('animated fadeInUp')
       }
     },
