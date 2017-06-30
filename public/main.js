@@ -19,7 +19,7 @@ $().ready(() => {
   $('.scroll').on('click touch', function(e) {
   	e.preventDefault()
   	$('html, body').animate({
-      scrollTop: $('#skills').offset().top + 50
+      scrollTop: $('#skills').offset().top - 15
     }, 700, 'swing')
   })
 
